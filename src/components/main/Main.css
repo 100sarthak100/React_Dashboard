@@ -1,0 +1,96 @@
+main {
+  background: #f3f4f6;
+  grid-area: main;
+  overflow-y: auto;
+}
+
+.mainContainer {
+  padding: 10px 25px;
+}
+
+.mainTitle {
+  display: flex;
+  align-items: center;
+}
+
+.mainTitle > img {
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.mainCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.card {
+  
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 2fr;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.chartsLeft {
+  padding: 15px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+
+.chartsLeftTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chartsLeftTitle > div > h1 {
+  font-size: 15px;
+  color: #2e4a66;
+  margin-bottom: 1px;
+}
+
+.chartsLeftTitle > div > p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #a5aaad;
+}
+
+.chartsLeftTitle > i {
+  color: #ffffff;
+  font-size: 20px;
+  background: #ffc100;
+  border-radius: 200px 0px 200px 200px;
+  -moz-border-radius: 200px 0px 200px 200px;
+  -webkit-border-radius: 200px 0px 200px 200px;
+  border: 0px solid #000000;
+  padding: 15px;
+}
+
+
+
+
+
+@media only screen and (max-width: 855px) {
+  .mainCards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}
