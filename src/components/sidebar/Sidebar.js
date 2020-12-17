@@ -1,7 +1,5 @@
 import "./Sidebar.css";
 import logo from "../../assets/logo.png";
-import assets from "../../assets/assets.png";
-
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
@@ -11,7 +9,6 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
           <img src={logo} alt="logo" />
           <h1>Finacular</h1>
         </div>
-        
       </div>
 
       <div className="sidebarMenu">
@@ -28,7 +25,6 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <div className="sidebarLink">
           <a href="#">Planning & Advisory</a>
         </div>
-       
       </div>
     </div>
   );

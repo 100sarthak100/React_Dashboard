@@ -7,7 +7,6 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
         <i className="fa fa-bars" aria-hidden="true"></i>
       </div>
       <div className="navbarLeft">
-        
         <a className="activeLink" href="#">
           Admin
         </a>
@@ -20,7 +19,10 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
           <i className="fa fa-bell" aria-hidden="true"></i>
         </a>
         <a href="#!">
-          <i className="fa fa-bolt" aria-hidden="true"> Actions</i>
+          <i className="fa fa-bolt" aria-hidden="true">
+            {" "}
+            Actions
+          </i>
         </a>
       </div>
     </nav>
